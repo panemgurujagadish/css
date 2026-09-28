@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>progress bar </title>
+    <script>
+        let value = 0;
+        function increase() {
+            value += 10;
+            document.getElementById("progress").style.width = value + "%";
+
+
+        }
+
+    </script>
+    <style>
+        .container {
+            width: 300px;
+            height: 30px;
+            border: 1px solid black;
+
+
+        }
+
+        #progress {
+            width: 0;
+            height: 100%;
+            background: green;
+
+
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="progress"></div>
+
+    </div>
+    <button onclick="increase()">increase</button>
+
+
+
+
+</body>
+
+
+</html>

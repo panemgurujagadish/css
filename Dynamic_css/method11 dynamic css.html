@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title> css variables</title>
+    <script>
+        function changecolor() {
+            debugger
+            document.documentElement.style.setProperty("--main-color", "red");
+        }
+
+
+    </script>
+    <style>
+        :root {
+
+            --main-color: blue;
+        }
+
+        .box {
+            background: var(--main-color);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="box">style</p>
+    <button onclick="changecolor()">changecolor</button>
+</body>
+
+
+</html>
